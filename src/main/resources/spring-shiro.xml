@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd"
+       default-lazy-init="true">
+
+    <!--<bean id="silentLoginSessionFilter"  class="com.mall.shiro.filter.SilentLoginSessionFilter">
+
+        <property name="unauthorizedUrl" value="${unauthorized.url}"/>
+        <property name="loginUrl"   value="${login.url}" />
+        <property name="userService" ref="userService"/>
+        <property name="characterCodingService" ref="characterCodingService"/>
+        <property name="officeService" ref="officeService"/>
+        <property name="objectValueJedisUtil" ref="objectValueJedisUtil"/>
+        <property name="redisShiroAuthorizationUtil" ref="redisShiroAuthorizationUtil"/>
+    </bean>-->
+    <!--退出-->
+    <!--<bean id="logoutFilter" class="com.cj.framework.ext43rdparty.shiro.LogoutFilter">
+        <property name="loginContextCode" value="${login.context.code}" />
+        <property name="redirectUrl"      value="${login.url}" />
+    </bean>-->
+
+    <!--验证码-->
+    <!--<bean id="captchaGenerateFilter"  class="com.cj.framework.ext43rdparty.shiro.CaptchaGenerateFilter"></bean>-->
+
+    <!--<bean id="clientAuthenticationFilter"  class="com.cj.framework.ext43rdparty.shiro.ClientAuthenticationFilter">
+        <property name="loginContextCode" value="${login.context.code}" />
+        <property name="loginUrl"   value="${login.url}" />
+        <property name="successUrl" value="${login.success.url}" />
+        <property name="unauthorizedUrl" value="${unauthorized.url}"/>
+        <property name="backOfficeContextCode" value="${back.office.context.code}" />
+        <property name="backOfficeSuccessUrl" value="${back.office.success.url}" />
+        <property name="userService" ref="userService"/>
+        <property name="redisShiroAuthorizationUtil" ref="redisShiroAuthorizationUtil"/>
+        <property name="authorizationService" ref="authorizationService" />
+    </bean>
+
+    <bean id="formAuthenticationFilter"  class="com.cj.framework.ext43rdparty.shiro.FormAuthenticationFilter">
+        <property name="usernameParam"   value="username" />
+        <property name="passwordParam"   value="password" />
+        <property name="rememberMeParam" value="rememberMe" />
+        <property name="loginContextCode" value="${login.context.code}" />
+        <property name="loginUrl"   value="${login.url}" />
+        <property name="successUrl" value="${login.success.url}" />
+        <property name="backOfficeContextCode" value="${back.office.context.code}" />
+        <property name="backOfficeSuccessUrl" value="${back.office.success.url}" />
+        <property name="userService" ref="userService" />
+    </bean>-->
+    <bean id="loginAuthenticationFilter"  class="com.mall.shiro.filter.LoginAuthenticationFilter">
+        <!--<property name="usernameParam"   value="username" />
+        <property name="passwordParam"   value="password" />
+        <property name="rememberMeParam" value="rememberMe" />
+        <property name="loginContextCode" value="${login.context.code}" />
+        <property name="loginUrl"   value="${login.url}" />
+        <property name="successUrl" value="${login.success.url}" />
+        <property name="backOfficeContextCode" value="${back.office.context.code}" />
+        <property name="backOfficeSuccessUrl" value="${back.office.success.url}" />
+        <property name="userService" ref="userService" />-->
+    </bean>
+
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!-- 调用我们配置的权限管理器 -->
+        <property name="securityManager" ref="securityManager" />
+        <property name="loginUrl" 	value="/login.jsp"/>
+        <property name="unauthorizedUrl" value="/unauthorizedUrl.jsp"/>
+        <property name="filters">
+            <util:map>
+                <!--<entry key="silentLogin"  value-ref="silentLoginSessionFilter"/>-->
+                <entry key="loginAuthc"    value-ref="loginAuthenticationFilter"/>
+                <!--<entry key="clientAuthc"  value-ref="clientAuthenticationFilter"/>
+                <entry key="logoutAuthc"  value-ref="logoutFilter"/>
+                <entry key="captchaGener" value-ref="captchaGenerateFilter"/>-->
+            </util:map>
+        </property>
+        <property name="filterChainDefinitions">
+            <value>
+                /static/**=anon
+                /lib/**=anon
+                <!--/views/**=anon
+                /website/**=anon
+                /wm/payment/ipay/**=anon
+                /wm/payment/sms/**=anon
+                /wm/payment/bill99/**=anon
+                /wm/payment/wexin/notify=anon
+                /wm/payment/wexin/callback=anon
+                /silentLogin=silentLogin
+                /captcha=captchaGener
+                /logout=logoutAuthc-->
+                /admin/login.do=loginAuthc
+                <!--/**=clientAuthc-->
+            </value>
+        </property>
+    </bean>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <!-- <property name="authenticator"  ref="authenticator" /> -->
+        <!-- <property name="subjectFactory" ref="webSubjectFactory"></property> -->
+        <!-- <property name="sessionMode" value="http"/> -->
+        <!-- <property name="sessionManager" ref="sessionManager" /> -->
+       <!-- <property name="cacheManager" ref="redisShiroCacheManager" />
+        <property name="rememberMeManager" ref="jmoaCookieRememberMeManager" />-->
+        <!--<property name="realms">
+            <list>
+                <ref local="userRealm" />
+            </list>
+        </property>-->
+    </bean>
+
+    <!--&lt;!&ndash; 自定义cacheManager &ndash;&gt;
+    <bean id="redisShiroCacheManager" class="com.cj.framework.ext43rdparty.shiro.RedisShiroCacheManager">
+        <property name="jedisUtil" ref="jedisUtil" />
+    </bean>
+    <bean id="redisShiroAuthorizationUtil" class="com.cj.framework.ext43rdparty.shiro.RedisShiroAuthorizationUtil">
+        <property name="redisShiroCacheManager" ref="redisShiroCacheManager" ></property>
+    </bean>
+    <bean id="jmoaCookieRememberMeManager" class="com.cj.framework.ext43rdparty.shiro.JmoaCookieRememberMeManager"></bean>
+-->
+    <!-- //使用servlate容器session
+    <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        <property name="sessionDAO" ref="redisSessionDAO" />
+        <property name="globalSessionTimeout" value="1200000" />
+        <property name="sessionValidationSchedulerEnabled" value="false" />
+        <property name="sessionIdCookieEnabled"  value="true" />
+        <property name="sessionIdCookie" ref="jmoaShiroSessionCookie"/>
+    </bean>
+
+    <bean id="redisSessionDAO" class="com.cj.framework.ext43rdparty.shiro.RedisSessionDAO">
+        <property name="sessionIdGenerator" ref="jmoaSessionIdGenerator"></property>
+        <property name="redisSessionUtil" ref="redisSessionUtil"></property>
+    </bean>
+    <bean id="redisSessionUtil" class="com.cj.framework.ext43rdparty.shiro.RedisSessionUtil">
+        <property name="jedisUtil" ref="jedisUtil" ></property>
+    </bean>
+
+    <bean id="jmoaSessionIdGenerator" class="com.cj.framework.ext43rdparty.shiro.JmoaSessionIdGenerator"></bean>
+    <bean id="jmoaShiroSessionCookie" class="com.cj.framework.ext43rdparty.shiro.JmoaShiroSessionCookie"></bean>
+     -->
+
+<!--
+
+
+    <bean  id="userRealm" class="com.cj.framework.ext43rdparty.shiro.JmoaUserRealm">
+        <property name="credentialsMatcher" ref="jmoaCredentialsMatcher"></property>
+        <property name="userService" ref="userService"></property>
+        <property name="authorizationService" ref="authorizationService"></property>
+    </bean>
+    <bean id="jmoaCredentialsMatcher" class="${credentials.matcher.class}"></bean>
+
+-->
+
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+    <aop:config proxy-target-class="true"></aop:config>
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+</beans>

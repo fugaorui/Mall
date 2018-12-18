@@ -52,7 +52,7 @@
         <property name="backOfficeSuccessUrl" value="${back.office.success.url}" />
         <property name="userService" ref="userService" />
     </bean>-->
-    <bean id="loginAuthenticationFilter"  class="com.mall.shiro.filter.LoginAuthenticationFilter">
+    <bean id="loginAuthenticationFilter"  class="com.corry.shiro.filter.LoginAuthenticationFilter">
         <!--<property name="usernameParam"   value="username" />
         <property name="passwordParam"   value="password" />
         <property name="rememberMeParam" value="rememberMe" />
@@ -93,6 +93,7 @@
                 /captcha=captchaGener
                 /logout=logoutAuthc-->
                 /admin/login.do=loginAuthc
+                /**=anon
                 <!--/**=clientAuthc-->
             </value>
         </property>
@@ -105,13 +106,21 @@
         <!-- <property name="sessionManager" ref="sessionManager" /> -->
        <!-- <property name="cacheManager" ref="redisShiroCacheManager" />
         <property name="rememberMeManager" ref="jmoaCookieRememberMeManager" />-->
-        <!--<property name="realms">
+        <property name="cacheManager" ref="redisShiroCacheManager" />
+        <property name="realms">
             <list>
                 <ref local="userRealm" />
             </list>
-        </property>-->
+        </property>
     </bean>
-
+    <!-- 自定义cacheManager -->
+    <bean id="redisShiroCacheManager" class="com.corry.redis.RedisShiroCacheManager">
+        <property name="jedisUtil" ref="jedisUtil" />
+    </bean>
+    <bean id="jedisUtil" class="com.corry.redis.MutiDbJedisUtil" ></bean>
+    <bean id="redisShiroAuthorizationUtil" class="com.corry.shiro.RedisShiroAuthorizationUtil">
+        <property name="redisShiroCacheManager" ref="redisShiroCacheManager" ></property>
+    </bean>
     <!--&lt;!&ndash; 自定义cacheManager &ndash;&gt;
     <bean id="redisShiroCacheManager" class="com.cj.framework.ext43rdparty.shiro.RedisShiroCacheManager">
         <property name="jedisUtil" ref="jedisUtil" />
@@ -153,7 +162,12 @@
     <bean id="jmoaCredentialsMatcher" class="${credentials.matcher.class}"></bean>
 
 -->
-
+    <bean  id="userRealm" class="com.corry.shiro.MyRealm">
+        <property name="credentialsMatcher" ref="corryCredentialsMatcher"></property>
+       <!-- <property name="authenticationCachingEnabled" value="true"/>
+        <property name="authorizationCachingEnabled" value="true"/>-->
+    </bean>
+    <bean id="corryCredentialsMatcher" class="com.corry.shiro.CorryCredentialsMatcher"></bean>
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
     <aop:config proxy-target-class="true"></aop:config>
     <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">

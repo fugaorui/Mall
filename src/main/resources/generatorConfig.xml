@@ -14,16 +14,22 @@
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
-        <javaModelGenerator targetPackage="com.mall.admin.pojo" targetProject="D:\zl\Mall\src\main\java">
+        <javaModelGenerator targetPackage="com.corry.admin.pojo" targetProject="D:\zl\Mall\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
-        <sqlMapGenerator targetPackage="com.mall.admin.mapping" targetProject="D:\zl\Mall\src\main\java">
+        <sqlMapGenerator targetPackage="com.corry.admin.mapping" targetProject="D:\zl\Mall\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.mall.admin.service" targetProject="D:\zl\Mall\src\main\java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.corry.admin.service" targetProject="D:\zl\Mall\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
-        <table tableName="sys_role" domainObjectName="Role" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="sys_user" domainObjectName="User"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
     </context>  
 </generatorConfiguration>  

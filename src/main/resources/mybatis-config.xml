@@ -7,7 +7,7 @@
     </settings>
     
 	<typeAliases>
-		<typeAlias type="com.spring.util.BaseDto" alias="dto" />
+		<typeAlias type="com.corry.base.util.BaseDto" alias="dto" />
 	</typeAliases>
 	<plugins>
 		<plugin interceptor="com.github.pagehelper.PageHelper">  

@@ -6,7 +6,161 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df0155e4-a387-425c-af14-6fab882c10de" name="Default Changelist" comment="" />
+    <list default="true" id="df0155e4-a387-425c-af14-6fab882c10de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/Serializers/KryoSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/Serializers/Serializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/admin/service/impl/UserMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/ContextUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/exception/Exceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/filter/HttpSessionWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/filter/RedisSessionWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/filter/SessionWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/redis/JedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/redis/MutiDbJedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/security/Digests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/security/Encodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/security/PasswordCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/shiro/CorryCredentialsMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/corry/shiro/RedisShiroAuthorizationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Redis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/redis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/shiro.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Mall_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Mall_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mall.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/control/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/admin/control/AdminUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/control/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/admin/control/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/mapping/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/mapping/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/pojo/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/service/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/service/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/admin/service/impl/UserMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/control/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/control/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/token/TokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/token/TokenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/token/TokenValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/token/TokenValid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/token/TokenValidInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/token/TokenValidInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/AssistTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/AssistTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/BaseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/BaseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/Dto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/Dto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/G4Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/G4Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/IdGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/IdGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/JsonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/JsonHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/JsonValueClobProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/JsonValueClobProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/JsonValueProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/JsonValueProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/PropertiesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/PropertiesFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/PropertiesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/PropertiesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/PropertiesHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/PropertiesHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/ResultDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/ResultDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/SessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/SessionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/TypeCaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/TypeCaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/base/util/exception/TypeCastException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/base/util/exception/TypeCastException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/shiro/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/shiro/MyRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/AllRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/AllRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/LoginAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/LoginAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/RequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/RequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/control/AdminUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/control/IndexController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/mapping/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/mapping/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/pojo/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/service/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/service/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/admin/service/impl/UserMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/control/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/token/TokenUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/token/TokenValid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/token/TokenValidInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/AssistTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/BaseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/Dto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/G4Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/IdGen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/JsonHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/JsonValueClobProcessImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/JsonValueProcessorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/PropertiesFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/PropertiesFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/PropertiesHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/ResultDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/SessionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/TypeCaseHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/base/util/exception/TypeCastException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/shiro/MyRealm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/shiro/filter/AllRequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/shiro/filter/LoginAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mall/shiro/filter/RequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/control/AdminUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/control/IndexController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/mapping/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/mapping/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/pojo/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/service/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/service/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/admin/service/impl/UserMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/control/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/token/TokenUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/token/TokenValid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/token/TokenValidInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/AssistTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/BaseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/Dto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/G4Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/IdGen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/JsonHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/JsonValueClobProcessImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/JsonValueProcessorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/PropertiesFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/PropertiesFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/PropertiesHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/ResultDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/SessionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/TypeCaseHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/base/util/exception/TypeCastException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/shiro/MyRealm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/shiro/filter/AllRequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/shiro/filter/LoginAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/com/mall/shiro/filter/RequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,157 +197,173 @@
     <session id="173474038">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="18" />
+          <entry key="project.open.time.107" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="64" />
+          <entry key="class" value="346" />
           <entry key="css" value="1" />
           <entry key="iml" value="2" />
           <entry key="ini" value="2" />
-          <entry key="java" value="63" />
+          <entry key="java" value="184" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="16" />
-          <entry key="properties" value="6" />
+          <entry key="jsp" value="31" />
+          <entry key="properties" value="14" />
           <entry key="sql" value="2" />
-          <entry key="xml" value="48" />
+          <entry key="xml" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="64" />
+          <entry key="CLASS" value="346" />
           <entry key="CSS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="63" />
-          <entry key="JSP" value="16" />
+          <entry key="JAVA" value="184" />
+          <entry key="JSP" value="31" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="6" />
+          <entry key="Properties" value="14" />
           <entry key="Scratch" value="2" />
-          <entry key="XML" value="48" />
+          <entry key="XML" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="5" />
           <entry key="ft" value="10" />
           <entry key="iml" value="1" />
-          <entry key="java" value="1953" />
-          <entry key="jsp" value="281" />
-          <entry key="properties" value="28" />
-          <entry key="txt" value="4" />
-          <entry key="xml" value="740" />
+          <entry key="java" value="3439" />
+          <entry key="jsp" value="446" />
+          <entry key="properties" value="30" />
+          <entry key="txt" value="7" />
+          <entry key="xml" value="920" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="1953" />
-          <entry key="JSP" value="281" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Properties" value="28" />
+          <entry key="JAVA" value="3439" />
+          <entry key="JSP" value="446" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Properties" value="30" />
           <entry key="VTL" value="10" />
-          <entry key="XML" value="740" />
+          <entry key="XML" value="920" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/pojo/UserExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/mapping/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1955">
+              <caret line="89" column="21" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/service/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/admin/control/AdminUserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1965">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
+        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+            <state relative-caret-position="690">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.jsp">
+        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/subject/support/SubjectCallable.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="828">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-shiro.xml">
+        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="93" column="35" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="35" />
+            <state relative-caret-position="5727">
+              <caret line="292" selection-start-line="292" selection-end-line="292" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-851">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="3174">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/LoginAuthenticationFilter.java">
+        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/PathMatchingFilter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AdviceFilter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/admin/control/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1288">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -211,36 +381,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>typeAliasesPackage</find>
-      <find>mapperLocations</find>
-      <find>AnnotationMethodHandlerAdapter</find>
-      <find>classpath*:jdbc.properties</find>
-      <find>spring-mvc.xml</find>
-      <find>resources</find>
-      <find>log4jConfigLocation</find>
+      <find>isLoginRequest</find>
       <find>spring-mybatis.xml</find>
-      <find>MemberMapper</find>
-      <find>org.aspectj.weaver.reflect.ReflectionWorld$ReflectionWorldException</find>
-      <find>MapperScannerConfigurer</find>
-      <find>NestedServletException</find>
-      <find>jdbc.properties</find>
-      <find>database</find>
-      <find>user</find>
-      <find>ShiroFilterFactoryBean</find>
-      <find>requestFilter</find>
-      <find>UserMapper</find>
-      <find>shiroFilter</find>
-      <find>AllRequestFilter</find>
-      <find>onAccessDenied</find>
-      <find>loginUrl</find>
-      <find>myRealm</find>
-      <find>RememberMeFilter</find>
-      <find>LoginAuthenticationFilter</find>
-      <find>redisShiroAuthorizationUtil</find>
-      <find>RedisShiroAuthorizationUtil</find>
-      <find>jmoaCredentialsMatcher</find>
-      <find>loginAuthc</find>
-      <find>loginAuthenticationFilter</find>
+      <find>getAuthenticationInfo</find>
+      <find>redisShiroCacheManager</find>
+      <find>cacheManager</find>
+      <find>aspectjweaver</find>
+      <find>AuthorizationAttributeSourceAdvisor</find>
+      <find>Redis.properties</find>
+      <find>Cache</find>
+      <find>RedisShiroCache</find>
+      <find>configWebSessionManager</find>
+      <find>keyPrefix</find>
+      <find>shiro_redis_cache</find>
+      <find>RedisShiroCacheManager</find>
+      <find>com.cj.framework.ext43rdparty.shiro.mallUserRealm.authorizationCache</find>
+      <find>USER_REALM_NAME</find>
+      <find>JedisUtil</find>
+      <find>MutiDbJedisUtil</find>
+      <find>redis.host</find>
+      <find>jedisPoolConfig</find>
+      <find>authenticationCachingEnabled</find>
+      <find>CREDENTIALS_MATCHER_CLASS_KEY</find>
+      <find>jedisPools</find>
+      <find>issueSuccessRedirect</find>
+      <find>uedit</find>
+      <find>login.jsp</find>
+      <find>doCredentialsMatch</find>
+      <find>failureKeyAttribute</find>
+      <find>8090</find>
+      <find>issueSuccess</find>
     </findStrings>
     <replaceStrings>
       <replace>mall</replace>
@@ -261,47 +431,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Mall.iml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/base/util/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/index/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/base/control/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/base/interceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/spring-shiro.xml" />
-        <option value="$PROJECT_DIR$/src/main/resource/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index/index1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/admin/service/impl/UserMapperImpl.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/classes/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/shiro.ini" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/test/ShiroTest.java" />
-        <option value="$PROJECT_DIR$/src/test/ShiroTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/RequestFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/log.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/unauthorized.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/shiro/MyRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/AllRequestFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/base.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/base.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/admin/control/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/test/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/base/util/SessionUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/admin/control/AdminUserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/LoginAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/admin/control/AdminUserController.java" />
+        <option value="$PROJECT_DIR$/src/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/base/control/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/admin/service/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/admin/pojo/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/admin/mapping/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/admin/service/impl/UserMapperImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/redis/JedisUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/redis/MutiDbJedisUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCacheManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/Serializers/KryoSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/Serializers/Serializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCache.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/filter/HttpSessionWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/base/util/ContextUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/filter/RedisSessionWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/shiro/RedisShiroAuthorizationUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/shiro/MyRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Redis.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/shiro/JmoaCredentialsMatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/base/util/exception/Exceptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/security/Digests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/security/Encodes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/shiro/CorryCredentialsMatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/security/PasswordCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/shiro.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/filter/SessionWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/redis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/base/control/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/admin/control/AdminUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/LoginAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
       </list>
     </option>
   </component>
@@ -330,23 +510,12 @@
           <item name="mall" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="width" value="1361" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="1366" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -369,23 +538,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Mall" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Mall" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Mall" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Mall" type="616d4139:PackageViewModuleNode" />
-              <item name="com.mall" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -417,7 +570,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="corry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
@@ -425,7 +578,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="corry" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -434,7 +587,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="corry" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -444,8 +597,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="corry" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
@@ -453,9 +607,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="corry" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
@@ -463,8 +617,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="corry" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
@@ -472,9 +627,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="corry" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
@@ -483,85 +639,50 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544005319595" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545040952508" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15492958" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mall.admin.service.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\zl\Mall\src\main\webapp" />
-      <recent name="D:\zl\Mall\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\zl\Mall\src\main\webapp\WEB-INF\static\js" />
-      <recent name="D:\zl\Mall\src\main\webapp\WEB-INF" />
-      <recent name="D:\zl\Mall\src\main\webapp\WEB-INF\views\index" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mall.shiro.filter" />
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\zl\Mall\src\main\webapp" />
       <recent name="D:\zl\Mall\src\main\webapp\WEB-INF\view" />
       <recent name="D:\zl\Mall\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\zl\Mall\src\main\resources" />
+      <recent name="D:\zl\Mall\src\main\java\com\corry\filter" />
+      <recent name="D:\zl\Mall\src\main\webapp\admin" />
+      <recent name="D:\zl\Mall\src\main\webapp" />
+      <recent name="D:\zl\Mall\src\main\webapp\WEB-INF\views" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.corry.filter" />
+      <recent name="com.corry.security" />
+      <recent name="com.corry.base.util.exception" />
+      <recent name="com.corry.shiro" />
+      <recent name="com.corry.base.util" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.corry.admin.service.impl" />
+      <recent name="com.mall.admin.service.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -576,7 +697,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.mall">
+  <component name="RunManager" selected="Maven.generator">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Mall" />
@@ -619,6 +740,80 @@
         </option>
       </MavenSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0.35" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="Mall:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Mall_7" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62646" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Mall:war exploded" />
+          <artifact name="Mall:war" />
+        </option>
+      </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat8" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
@@ -769,9 +964,10 @@
     </configuration>
     <list>
       <item itemvalue="Maven.generator" />
+      <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="Tomcat Server.mall" />
-      <item itemvalue="JUnit.ShiroTest.test" />
       <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.ShiroTest.test" />
     </list>
     <recent_temporary>
       <list>
@@ -797,7 +993,24 @@
       <workItem from="1543885398627" duration="25872000" />
       <workItem from="1543972467222" duration="3234000" />
       <workItem from="1543978390601" duration="1828000" />
-      <workItem from="1543993368458" duration="7982000" />
+      <workItem from="1543993368458" duration="7991000" />
+      <workItem from="1544058956645" duration="14216000" />
+      <workItem from="1544102452788" duration="11980000" />
+      <workItem from="1544144379285" duration="23920000" />
+      <workItem from="1544347158587" duration="599000" />
+      <workItem from="1544404394160" duration="125000" />
+      <workItem from="1544404534995" duration="253000" />
+      <workItem from="1544404913606" duration="7055000" />
+      <workItem from="1544490349230" duration="1722000" />
+      <workItem from="1544577181755" duration="574000" />
+      <workItem from="1544674854156" duration="2479000" />
+      <workItem from="1544749685475" duration="1347000" />
+      <workItem from="1544835895960" duration="270000" />
+      <workItem from="1544836228570" duration="333000" />
+      <workItem from="1544837486202" duration="591000" />
+      <workItem from="1544839708912" duration="5526000" />
+      <workItem from="1544949096316" duration="1262000" />
+      <workItem from="1545009203149" duration="1397000" />
     </task>
     <servers />
   </component>
@@ -825,7 +1038,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72378000" />
+    <option name="totallyTimeSpent" value="146036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,9 +1050,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1361" height="735" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7722096" weight="0.2997694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7722096" visible="true" weight="0.2344932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -848,25 +1061,25 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" sideWeight="0.22779043" side_tool="true" weight="0.28670254" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5519031" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37954938" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928944" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49961567" weight="0.6571429" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2542662" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871974" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.37370244" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32871974" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.17474048" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50038433" side_tool="true" weight="0.21672355" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.24920635" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32871974" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32871974" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32974634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven Projects" order="2" weight="0.18139893" />
+      <window_info anchor="right" id="Maven Projects" order="2" weight="0.10633484" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.2490392" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.3189854" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="JSF" order="7" />
@@ -877,7 +1090,7 @@
       <window_info anchor="right" id="Bean Validation" order="12" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7722096" weight="0.2997694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7722096" visible="true" weight="0.2344932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -886,25 +1099,25 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" sideWeight="0.22779043" side_tool="true" weight="0.28670254" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5519031" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.61072665" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928944" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49961567" weight="0.6571429" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2542662" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871974" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.37370244" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32871974" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.17474048" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50038433" side_tool="true" weight="0.21672355" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.24920635" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32871974" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32871974" />
-      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32974634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven Projects" order="2" weight="0.18139893" />
+      <window_info anchor="right" id="Maven Projects" order="2" weight="0.10633484" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.2490392" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.3189854" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="JSF" order="7" />
@@ -925,70 +1138,46 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/base/token/TokenValidInterceptor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/base/token/TokenValidInterceptor.java</url>
           <line>47</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/base/token/TokenValidInterceptor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/base/token/TokenValidInterceptor.java</url>
           <line>36</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/base/token/TokenValidInterceptor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/base/token/TokenValidInterceptor.java</url>
           <line>24</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/base/interceptor/LoginInterceptor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/base/interceptor/LoginInterceptor.java</url>
           <line>77</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/base/interceptor/LoginInterceptor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/base/interceptor/LoginInterceptor.java</url>
           <line>25</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/test/Test.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/test/Test.java</url>
           <line>17</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/admin/service/impl/UserMapperImpl.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/shiro/MyRealm.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/shiro/MyRealm.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/admin/control/IndexController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/admin/control/IndexController.java</url>
           <line>15</line>
           <properties />
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AdviceFilter.class</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/ShiroTest.java</url>
@@ -997,34 +1186,214 @@
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/AuthenticationFilter.class</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/AllRequestFilter.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/AllRequestFilter.java</url>
           <line>35</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/AllRequestFilter.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/AllRequestFilter.java</url>
           <line>44</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/LoginAuthenticationFilter.java</url>
-          <line>64</line>
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.class</url>
+          <line>79</line>
           <properties />
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/LoginAuthenticationFilter.java</url>
-          <line>26</line>
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.class</url>
+          <line>25</line>
           <properties />
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCache.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>215</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/shiro/RedisShiroAuthorizationUtil.java</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/redis/MutiDbJedisUtil.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCache.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/Serializers/KryoSerializer.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/shiro/CorryCredentialsMatcher.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/redis/MutiDbJedisUtil.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCache.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/LoginAuthenticationFilter.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class</url>
+          <line>452</line>
+          <properties />
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/util/WebUtils.class</url>
+          <line>316</line>
+          <properties />
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/admin/control/AdminUserController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/AbstractAuthenticator.class</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/mgt/DefaultSecurityManager.class</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/admin/control/AdminUserController.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/admin/control/AdminUserController.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/admin/control/AdminUserController.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/LoginAuthenticationFilter.java</url>
+          <line>175</line>
+          <properties />
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/util/WebUtils.class</url>
+          <line>317</line>
+          <properties />
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/util/WebUtils.class</url>
+          <line>260</line>
+          <properties />
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AdviceFilter.class</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="185" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1033,368 +1402,346 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/test/ShiroTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK/jdk1.8.0_152/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/subject/support/WebDelegatingSubject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/subject/Subject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="59" column="14" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/admin/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/unauthorized.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK/jdk1.8.0_152/src.zip!/javax/management/remote/rmi/RMIConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="24" column="127" selection-start-line="24" selection-start-column="127" selection-end-line="24" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/annotation/AnnotationMethodHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="245" selection-start-line="245" selection-end-line="245" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="415" selection-start-line="415" selection-end-line="415" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="992">
-          <caret line="492" selection-start-line="492" selection-end-line="492" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/admin/service/impl/UserMapperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/jquery-1.10.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/ShiroTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="32" column="34" selection-start-line="31" selection-start-column="8" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/RequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authz/PermissionsAuthorizationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/ProxiedFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/subject/support/SubjectCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="290" selection-start-line="290" selection-end-line="290" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/filter/DelegatingFilterProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/default/skin.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/AllRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5106">
-          <caret line="222" column="11" selection-start-line="222" selection-start-column="11" selection-end-line="222" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/base.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/shiro/MyRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="70" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="70" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK/jdk1.8.0_152/src.zip!/java/security/MessageDigest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="163" column="35" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK/jdk1.8.0_152/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="489" column="47" selection-start-line="489" selection-start-column="19" selection-end-line="489" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/base/util/SessionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="68" column="75" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/base/util/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/AuthenticationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-851">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="93" column="35" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/admin/control/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="57">
+          <caret line="169" column="85" selection-start-line="169" selection-start-column="46" selection-end-line="169" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="253">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/unauthorized.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/base.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/mgt/AuthenticatingSecurityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/AccessControlFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
+        <state relative-caret-position="103">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/PathMatchingFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
+        <state relative-caret-position="103">
           <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AdviceFilter.class">
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/ProxiedFilterChain.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="163">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/filter/DelegatingFilterProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/pam/ModularRealmAuthenticator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp" />
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/credential/SimpleCredentialsMatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/credential/PasswordMatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-524">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/credential/CredentialsMatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/AuthenticationException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/AuthenticationListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/base/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="119" column="66" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/shiro/MyRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1702">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/base/control/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/mgt/DefaultSecurityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/redis/RedisShiroCacheManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/authc/AbstractAuthenticator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/util/RedirectView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="126" column="40" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/realm/AuthenticatingRealm.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4437" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/control/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+        <state relative-caret-position="29">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/shiro/filter/LoginAuthenticationFilter.java">
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/annotation/AnnotationMethodHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="88">
+          <caret line="245" selection-start-line="245" selection-end-line="245" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="415" selection-start-line="415" selection-end-line="415" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="403" selection-start-line="403" selection-end-line="403" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/shiro/CorryCredentialsMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/admin/control/AdminUserController.java">
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="920">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AdviceFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/shiro/filter/LoginAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2829">
+          <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/util/WebUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5405">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/AuthenticationFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/subject/support/SubjectCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5727">
+          <caret line="292" selection-start-line="292" selection-end-line="292" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3174">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/mall-0.0.1-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.3.jar!/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/pojo/UserExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/mapping/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/service/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corry/admin/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1965">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

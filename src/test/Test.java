@@ -10,8 +10,9 @@ import java.security.NoSuchAlgorithmException;
 public class Test {
 
     public static void main(String[] args) throws UnsupportedEncodingException,NoSuchAlgorithmException {
-        String str ="a6dc0e4c4da5de3b";
-        String plainPassword ="ws$root";
+        //adf5fef7d871f79faa968005773433cb539566f140edf6668d1057f5
+        String str ="adf5fef7d871f79f";
+        String plainPassword ="123456";
         SimpleByteSource simpleByteSource = new SimpleByteSource(str);
         System.out.println("simpleByteSource:"+simpleByteSource.toString());
         SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo("root","d24128b69f88d96f39a9d64bef9a86416529ab0b",simpleByteSource,"JmoaUserRealm");
@@ -35,6 +36,6 @@ public class Test {
         }
         byte[] hashPassword  =result;
         System.out.println(Hex.encodeToString(salt));
-        System.out.println(Hex.encodeToString(hashPassword));
+        System.out.println(Hex.encodeToString(salt)+Hex.encodeToString(hashPassword));
     }
 }

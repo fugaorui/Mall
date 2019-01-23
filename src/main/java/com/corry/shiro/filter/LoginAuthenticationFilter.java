@@ -7,8 +7,8 @@ import com.corry.base.util.Constants;
 import com.corry.base.util.Dto;
 import com.corry.base.util.SessionUtil;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.ConcurrentAccessException;
 import org.apache.shiro.authc.LockedAccountException;
-import org.apache.shiro.cas.CasAuthenticationException;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
 import org.apache.shiro.web.util.WebUtils;
@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
@@ -58,7 +59,16 @@ public class LoginAuthenticationFilter extends FormAuthenticationFilter {
         this.successUrl = successUrl;
         super.setSuccessUrl(successUrl);
     }
+    public static final String DEFAULT_LOGIN_URL = Constants.DEFAULT_LOGIN_URL;
+    private String loginUrl = DEFAULT_LOGIN_URL;
 
+    public String getLoginUrl() {
+        return loginUrl;
+    }
+
+    public void setLoginUrl(String loginUrl) {
+        this.loginUrl = loginUrl;
+    }
 
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
@@ -85,6 +95,7 @@ public class LoginAuthenticationFilter extends FormAuthenticationFilter {
     protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
         //return super.onAccessDenied(request, response);
         HttpServletRequest httpReq = WebUtils.toHttp(request);
+        HttpServletResponse httpRes = WebUtils.toHttp(response);
          HttpSession session =httpReq.getSession();
       /*  // 获取状态值
         Integer authState = (Integer) request.getAttribute(ShiroUtils.AUTHENTICATION_STATE_KEY);
@@ -111,15 +122,15 @@ public class LoginAuthenticationFilter extends FormAuthenticationFilter {
         }*/
       //  boolean validate =  isLoginRequest(request, response);
         boolean validate = super.onAccessDenied(request, response);// 这里成功返回false//失败返回true
-
         if (validate) {// 这里成功返回false//失败返回true
             String string = (String) request.getAttribute("shiroLoginFailure");
             String string1 = (String) request.getAttribute("loginFailure");
             System.out.println("____________"+string);
             System.out.println("_____*___*____"+string1);
             session.setAttribute("loginFailure",string1);
-            redirectToLogin(request, response);
-            //setFormFailureAttribute(httpReq, true, true);
+            //this.setFormFailureAttribute(httpReq);
+            //httpRes.sendRedirect("/admin/login.jsp");
+            setFormFailureAttribute(httpReq, true, true);
             return true;// 进入登录页面
         } else {// 登录成功。
 
@@ -139,7 +150,6 @@ public class LoginAuthenticationFilter extends FormAuthenticationFilter {
     protected void redirectToLogin(ServletRequest request, ServletResponse response) throws IOException {
         String loginUrl = "/admin/login.jsp";
         WebUtils.issueRedirect(request, response, loginUrl);
-        return;
     }
 
 
@@ -151,6 +161,31 @@ public class LoginAuthenticationFilter extends FormAuthenticationFilter {
      */
     protected void issueSuccess(ServletRequest request, ServletResponse response) throws Exception {
         HttpServletRequest httpRequest = WebUtils.toHttp(request);
+        HttpServletResponse httpResponse= WebUtils.toHttp(response);
+        if (Constants.AJAX_RES_TYPE_JSON.equalsIgnoreCase(request.getParameter(Constants.AJAX_RES_TYPE))) {
+           /* ResultDTO resultDTO = new ResultDTO();
+            String loginUrl = getLoginUrl();
+            // 获取完整路径
+            loginUrl =ShiroUtils.getFullUrlByContextCode(httpRequest, this.getLoginContextCode(), loginUrl);
+
+            resultDTO.put("loginUrl", loginUrl);
+            String message = localeUtil.getLocalText("login.success", "登录成功", new Object[] {});
+
+            // 输出json格式流
+            ResultUtils.writeJSONString(response, ResultUtils.toMap(resultDTO, message));*/
+
+        } else {
+            //issueSuccessRedirect(request, response);
+            String username = (String) SecurityUtils.getSubject().getPrincipal();
+            User user = userMapper.findUserBylogin(username);
+            httpRequest.getSession().setAttribute(Constants.SESSION_USER_KEY, user);
+            try {
+                WebUtils.issueRedirect(httpRequest, httpResponse, getSuccessUrl(), null, false,true);
+            }catch (Exception e){
+
+            }
+            //WebUtils.redirectToSavedRequest(request, response, getSuccessUrl());
+        }
        /* if (Constants.AJAX_RES_TYPE_JSON.equalsIgnoreCase(request.getParameter(Constants.AJAX_RES_TYPE))) {
             ResultDTO resultDTO = new ResultDTO();
             String loginUrl = getLoginUrl();
@@ -169,13 +204,18 @@ public class LoginAuthenticationFilter extends FormAuthenticationFilter {
         //issueSuccessRedirect(request, response);
         //WebUtils.redirectToSavedRequest(request, response, this.getSuccessUrl());
         // 设置登录session 用户信息
-        String username = (String) SecurityUtils.getSubject().getPrincipal();
-        dto.put("username",username);
-        User user = userMapper.login(dto);
-        httpRequest.getSession().setAttribute(Constants.SESSION_USER_KEY, user);
-        WebUtils.redirectToSavedRequest(request, response, getSuccessUrl());
+
     }
 
+    /***
+     * 设置失败相关属性,验证码是成功验证过的。
+     *
+     * @param request
+     */
+    private void setFormFailureAttribute(HttpServletRequest request) {
+        //验证码与最大尝试登陆次数验证均通过
+        setFormFailureAttribute(request, true, false);
+    }
     /**
      * 设置失败相关属性
      *
@@ -191,10 +231,11 @@ public class LoginAuthenticationFilter extends FormAuthenticationFilter {
             String backUrl = request.getParameter(Constants.BACK_URL);// 设置回退地址。
             request.setAttribute(Constants.BACK_URL, StringUtils.trimToEmpty(backUrl));*/
         if (!captchValidate) {// 验证码验证失败
-            this.setFailureAttribute(request, new CasAuthenticationException());
+            this.setFailureAttribute(request, new ConcurrentAccessException());
+
         }else if(isOverMaxFail){// 最大次数验证失败
             this.setFailureAttribute(request, new LockedAccountException());
         }
+        return;
     }
-
 }

@@ -1,5 +1,6 @@
 package com.corry.admin.control;
 
+import com.corry.admin.pojo.User;
 import com.corry.admin.service.UserMapper;
 import com.corry.base.control.BaseController;
 import org.apache.shiro.web.util.WebUtils;
@@ -45,12 +46,14 @@ public class AdminUserController extends BaseController {
      * @throws IOException
      */
     @RequestMapping(value = "/admin/login.do",method = RequestMethod.POST)
-    private void toLogin(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
+    public String toLogin(User user, Boolean rememberme, HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
+        // 如果已经登录，则跳转到管理首页
         if (isLogin(request)) {
-            redirectToLogin(request, response);
-           // return "redirect:/admin/index";
+            gotoLogin(request,response);
         }
-        gotoLogin(request,response);
+        //return redirectIndex(request, local, companyCode);//"redirect:/index?url="+ request.getParameter("url");
+        //设置locale,companyCode放入到index里处理。
+        return "admin/login";
     }
     @RequestMapping("/admin/perms/test.do")
     private void perms(HttpServletRequest request, HttpServletResponse response){
@@ -76,9 +79,10 @@ public class AdminUserController extends BaseController {
     public static void gotoLogin(HttpServletRequest request,HttpServletResponse response) throws IOException{
 
         WebUtils.issueRedirect(request,response,"login.jsp",null,false,true);
+        return;
     }
 
-    protected void redirectToLogin(ServletRequest request, ServletResponse response) throws IOException {
+    private void redirectToLogin(ServletRequest request, ServletResponse response) throws IOException {
         String loginUrl = "login.jsp";
         WebUtils.issueRedirect(request, response, loginUrl,null,false,true);
         return;

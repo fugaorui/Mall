@@ -36,6 +36,11 @@ public class UserMapperImpl implements UserMapper {
     }
 
     @Override
+    public User findUserBylogin(String username) {
+        return userMapper.findUserBylogin(username);
+    }
+
+    @Override
     public User selectByPrimaryKey(Integer userid) {
         return null;
     }

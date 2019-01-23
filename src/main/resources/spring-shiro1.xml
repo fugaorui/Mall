@@ -117,7 +117,7 @@
     <bean id="redisShiroCacheManager" class="com.corry.redis.RedisShiroCacheManager">
         <property name="jedisUtil" ref="jedisUtil" />
     </bean>
-    <bean id="jedisUtil" class="com.corry.redis.MutiDbJedisUtil" ></bean>
+
     <bean id="redisShiroAuthorizationUtil" class="com.corry.shiro.RedisShiroAuthorizationUtil">
         <property name="redisShiroCacheManager" ref="redisShiroCacheManager" ></property>
     </bean>

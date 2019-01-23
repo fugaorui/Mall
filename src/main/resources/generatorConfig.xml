@@ -25,11 +25,11 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <table tableName="sys_user" domainObjectName="User"
-               enableCountByExample="true"
-               enableUpdateByExample="true"
-               enableDeleteByExample="true"
-               enableSelectByExample="true"
-               selectByExampleQueryId="true">
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
         </table>
     </context>  
 </generatorConfiguration>  

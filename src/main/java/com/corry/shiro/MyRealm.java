@@ -65,8 +65,7 @@ public class MyRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) {
         String username = (String)token.getPrincipal();
-        dto.put("username",username);
-        User user = userMapper.login(dto);
+        User user = userMapper.findUserBylogin(username);
         if(null==user){
             throw new UnknownAccountException("账号密码错误");
         }

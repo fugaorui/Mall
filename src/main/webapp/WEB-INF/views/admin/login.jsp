@@ -13,5 +13,11 @@
 </head>
 <body>
 我是登陆页面
+<form action="/admin/login.do" method="post">
+    账号：<input type="text" name="username" id="username"><br>
+    密码：<input type="password" name="password" id="password"><br>
+    <input type="submit" value="确认" >
+    admin文件夹下返回错误信息：<%=session.getAttribute("loginFailure")%>
+</form>
 </body>
 </html>

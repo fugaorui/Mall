@@ -10,6 +10,7 @@
     <param-value>
       classpath*:spring-mybatis.xml
       classpath*:spring-shiro.xml
+      classpath*:redis-config.xml
     </param-value>
   </context-param>
   <!-- 编码过滤器 -->
@@ -80,8 +81,8 @@
     <error-code>404</error-code>
     <location>/404.jsp</location>
   </error-page>
-  <error-page>
+  <!--<error-page>
     <error-code>500</error-code>
     <location>/error.jsp</location>
-  </error-page>
+  </error-page>-->
 </web-app>

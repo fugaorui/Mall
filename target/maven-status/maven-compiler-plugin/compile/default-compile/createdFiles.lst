@@ -1,5 +1,6 @@
 com\corry\Serializers\Serializer.class
 com\corry\base\util\Dto.class
+com\corry\shiro\filter\LoginFilter.class
 com\corry\base\util\TypeCaseHelper.class
 com\corry\shiro\MyRealm.class
 com\corry\security\Digests.class
@@ -14,6 +15,7 @@ com\corry\base\util\exception\TypeCastException.class
 com\corry\base\util\G4Constants.class
 com\corry\shiro\filter\LoginAuthenticationFilter.class
 com\corry\Serializers\KryoSerializer.class
+com\corry\shiro\filter\RoleFilter.class
 com\corry\base\interceptor\LoginInterceptor.class
 com\corry\security\Encodes.class
 com\corry\redis\JedisUtil.class
@@ -22,6 +24,7 @@ com\corry\shiro\filter\RequestFilter.class
 com\corry\base\util\Constants.class
 com\corry\admin\service\impl\UserMapperImpl.class
 com\corry\base\token\TokenUtils.class
+com\corry\shiro\filter\PermissionFilter.class
 com\corry\base\util\SessionUtil.class
 com\corry\base\token\TokenValidInterceptor.class
 com\corry\redis\MutiDbJedisUtil.class

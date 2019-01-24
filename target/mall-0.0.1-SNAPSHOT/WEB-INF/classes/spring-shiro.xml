@@ -121,51 +121,8 @@
     <bean id="redisShiroAuthorizationUtil" class="com.corry.shiro.RedisShiroAuthorizationUtil">
         <property name="redisShiroCacheManager" ref="redisShiroCacheManager" ></property>
     </bean>
-    <!--&lt;!&ndash; 自定义cacheManager &ndash;&gt;
-    <bean id="redisShiroCacheManager" class="com.cj.framework.ext43rdparty.shiro.RedisShiroCacheManager">
-        <property name="jedisUtil" ref="jedisUtil" />
-    </bean>
-    <bean id="redisShiroAuthorizationUtil" class="com.cj.framework.ext43rdparty.shiro.RedisShiroAuthorizationUtil">
-        <property name="redisShiroCacheManager" ref="redisShiroCacheManager" ></property>
-    </bean>
-    <bean id="jmoaCookieRememberMeManager" class="com.cj.framework.ext43rdparty.shiro.JmoaCookieRememberMeManager"></bean>
--->
-    <!-- //使用servlate容器session
-    <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
-        <property name="sessionDAO" ref="redisSessionDAO" />
-        <property name="globalSessionTimeout" value="1200000" />
-        <property name="sessionValidationSchedulerEnabled" value="false" />
-        <property name="sessionIdCookieEnabled"  value="true" />
-        <property name="sessionIdCookie" ref="jmoaShiroSessionCookie"/>
-    </bean>
-
-    <bean id="redisSessionDAO" class="com.cj.framework.ext43rdparty.shiro.RedisSessionDAO">
-        <property name="sessionIdGenerator" ref="jmoaSessionIdGenerator"></property>
-        <property name="redisSessionUtil" ref="redisSessionUtil"></property>
-    </bean>
-    <bean id="redisSessionUtil" class="com.cj.framework.ext43rdparty.shiro.RedisSessionUtil">
-        <property name="jedisUtil" ref="jedisUtil" ></property>
-    </bean>
-
-    <bean id="jmoaSessionIdGenerator" class="com.cj.framework.ext43rdparty.shiro.JmoaSessionIdGenerator"></bean>
-    <bean id="jmoaShiroSessionCookie" class="com.cj.framework.ext43rdparty.shiro.JmoaShiroSessionCookie"></bean>
-     -->
-
-<!--
-
-
-    <bean  id="userRealm" class="com.cj.framework.ext43rdparty.shiro.JmoaUserRealm">
-        <property name="credentialsMatcher" ref="jmoaCredentialsMatcher"></property>
-        <property name="userService" ref="userService"></property>
-        <property name="authorizationService" ref="authorizationService"></property>
-    </bean>
-    <bean id="jmoaCredentialsMatcher" class="${credentials.matcher.class}"></bean>
-
--->
     <bean  id="userRealm" class="com.corry.shiro.MyRealm">
         <property name="credentialsMatcher" ref="corryCredentialsMatcher"></property>
-       <!-- <property name="authenticationCachingEnabled" value="true"/>
-        <property name="authorizationCachingEnabled" value="true"/>-->
     </bean>
     <bean id="corryCredentialsMatcher" class="com.corry.shiro.CorryCredentialsMatcher"></bean>
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
